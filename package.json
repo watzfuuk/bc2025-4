@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js --input mtcars.json --host localhost --port 8080",
+    "dev": "nodemon main.js --input mtcars.json --host localhost --port 8080"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/watzfuuk/bc2025-4/issues"
   },
-  "homepage": "https://github.com/watzfuuk/bc2025-4#readme"
+  "homepage": "https://github.com/watzfuuk/bc2025-4#readme",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "fast-xml-parser": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
